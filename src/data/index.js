@@ -4,28 +4,6 @@ import KelasImage3 from "../assets/img/kelas/kelas-3.jpg";
 import KelasImage4 from "../assets/img/kelas/kelas-4.jpg";
 import KelasImage5 from "../assets/img/kelas/kelas-5.jpg";
 
-
-export const navLinks = [
-  {
-    id: 1,
-    path: "/Home",
-    text: "Home",
-  },
-  {
-    id: 2,
-    path: "/Franchise",
-    text: "Franchise",
-  },
-  {
-    id: 3,
-    path: "/Testimoni",
-    text: "Rekomendasi",
-  },
-
-
-];
-
-
 export const pageFranchise = [
   {
     id: 1,
