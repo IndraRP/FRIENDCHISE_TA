@@ -1,11 +1,14 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { rekomendasi } from "../data";
 
+import MyNavbar from "../Components/Navbar"
 
 const Testimoni = () => {
 
 
   return (
+    <div>
+      <MyNavbar/>
     <div className="rekomendasi_page">
       <Container>
         <Row>
@@ -43,6 +46,7 @@ const Testimoni = () => {
         </Row>
 
       </Container>
+    </div>
     </div>
   )
 }

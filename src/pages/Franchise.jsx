@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { pageFranchise } from "../data";
 
 import {useNavigate} from "react-router-dom";
+import MyNavbar from "../Components/Navbar"
 
 
 const franchise = () => {
@@ -9,7 +10,12 @@ const franchise = () => {
   let navigate = useNavigate();
 
   return (
+
+    <div>
+      <MyNavbar/>
+
     <div className="franchise_page">
+      
       <Container>
         <Row>
           <Col>
@@ -44,7 +50,7 @@ const franchise = () => {
       </Container>
     </div>
 
-    
+    </div>
     
   )
 }

@@ -6,14 +6,11 @@ import Testimoni from "./pages/Testimoni"
 
 import Check from "./pages/Check"
 
-import Homeadmin from "./pages/Home_admin"
-import Read from "./pages/Read_admin"
-
-import Loginadmin from "./pages/Login_admin"
 import Login from "./pages/login"
 import Daftar from "./pages/daftar"
+import DaftarFranc from "./pages/DaftarFranchise"
 
-import MyNavbar from "./Components/Navbar"
+
 import Footer from "./Components/Footer"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -22,21 +19,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div>
-<MyNavbar/>
 
     <Routes>
-     <Route path="/" Component={Home} />
+     <Route path="/" Component={Login} />
+     <Route path="/Home" Component={Home} />
      <Route path="/Franchise" Component={Franchiseaja} />
      <Route path="/Testimoni" Component={Testimoni} />
 
      <Route path="/Check" Component={Check} />
+     <Route path="/DaftarFranchise" Component={DaftarFranc} />
 
      <Route path="/login" Component={Login} />
      <Route path="/daftar" Component={Daftar} />
-     <Route path="/Login_admin" Component={Loginadmin} />
-
-     <Route path="/Home_admin" Component={Homeadmin} />
-     <Route path="/Read_admin" Component={Read} />
 
     </Routes>
 

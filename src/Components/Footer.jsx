@@ -2,8 +2,9 @@
 
 const footer = () => {
   return (
-    <div className="footer text-center bg-dark pt-3 pb-2"> 
-     <p>© Copyright by FriendChise 2024</p>
+    <div className="footer bg-dark pt-4 pb-4 text-center">
+    <p>© Copyright by FriendChise 2024</p> 
+     <a className="text-decoration-none text-light" href="https://wa.me/082131211769">ContactMe</a>
     </div>
   )
 }

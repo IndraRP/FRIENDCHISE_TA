@@ -29,7 +29,7 @@ useEffect(()=>{
     <Navbar  expand="lg" className={changeColor ? "color-active" : ""}>
 
       <Container >
-        <Navbar.Brand className='fs-3 fw-bold' href="/">FriendChise</Navbar.Brand>
+        <Navbar.Brand className='fs-3 fw-bold' href="/Home">FriendChise</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
 
@@ -45,7 +45,6 @@ useEffect(()=>{
 })}
           </Nav>
 
-          <Navbar.Brand className='login btn btn-dark login' href="/login">Login</Navbar.Brand>
         </Navbar.Collapse>
       </Container>
       

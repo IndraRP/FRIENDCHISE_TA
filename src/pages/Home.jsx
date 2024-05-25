@@ -1,16 +1,20 @@
 import {Container, Row, Col} from 'react-bootstrap';
 import HeroImage from'../assets/img/hero.png'
 
-import {listfranchise} from '../data/index';
+import MyNavbar from "../Components/Navbar"
 import {useNavigate} from "react-router-dom";
 
 
-
 const Home = () => {
-
   let navigate = useNavigate();
+
+
+
   return (
+    <div>
+<MyNavbar/>
     <div className="homepage">
+
         <header className="w-100 min-vh-100 d-flex align-items-center pt-lg-5">
  <Container>
     <Row className='header-box d-flex align-items-center'>
@@ -22,7 +26,7 @@ const Home = () => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quae excepturi ex amet incidunt laudantium!</p>
 
 <button className='btn btn-warning rounded-2 me-2' onClick={()=> navigate("/franchise")}>Lihat Franchise</button>
-<button className='btn btn-outline-warning rounded-2'>Daftar Franchise</button>
+<button className='btn btn-outline-warning rounded-2' onClick={()=> navigate("/DaftarFranchise")} >Daftar Franchise</button>
 
 
         </Col>
@@ -31,70 +35,7 @@ const Home = () => {
         </Col>
     </Row>
  </Container>
-
-
-
-
-
-
-
-
-
-
-
- 
-
         </header>
-        <div className='kelas w-100 min-vh-100'>
-        <Container>
-          <Row>
-            <Col>
-              <h1 className='text-center fw-bold'>Franchise</h1>
-              <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae soluta sed qui cumque, accusantium voluptatem?</p>
-            
-            </Col>    
-          </Row>
-
-<Row>
-          {listfranchise.map((franchise)=>{
-            return(
-              <Col key={franchise.id} className='rounded-5 shadow'>
-                <img src={franchise.image} className='w-100 mb-3 rounded-4'/>
-                <div className='star mb-4 px-3'>
-                  <i className={franchise.star1}></i>
-                  <i className={franchise.star2}></i>
-                  <i className={franchise.star3}></i>
-                  <i className={franchise.star4}></i>
-                  <i className={franchise.star5}></i>
-                </div>
-    <h5 className='mb-5 px-3'> {franchise.title} </h5>
-
-
-
-    <div className='ket d-flex justify-content-between align-items-center px-3 pb-3 pt-2'>
-      <button className='btn btn-danger rounded-3 mb-2' onClick={()=> navigate("/Check")}>{franchise.buy} </button>
-    </div>
-
-
-              </Col>
-            )})}
-          </Row>
-
-
-
-          <Row>
-            <Col className='text-center'>
-             <button className='btn btn-success rounded-5  btn-lg' onClick={()=> navigate("/franchise")}>Lihat Semua Franchise
-             <i className='fa-solid fa-chevron-right ms-3'></i>
-             </button>
-            </Col>
-          </Row>
-        </Container>
-        </div>
-
-
-
-
 
 
 
@@ -131,7 +72,7 @@ const Home = () => {
         </div>
 
         </div>
-
+        </div>
         
   )
 }
