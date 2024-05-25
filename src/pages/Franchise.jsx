@@ -1,12 +1,14 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { pageFranchise } from "../data";
 
+import {useNavigate} from "react-router-dom";
+
 
 const franchise = () => {
 
-  return (
+  let navigate = useNavigate();
 
-    
+  return (
     <div className="franchise_page">
       <Container>
         <Row>
@@ -32,7 +34,7 @@ const franchise = () => {
 
     <div className='ket d-flex justify-content-between align-items-center px-3 pb-3 pt-2'>
 
-      <button className='btn btn-danger rounded-3 mb-2'>{franchise.buy}</button>
+      <button className='btn btn-danger rounded-3 mb-2' onClick={()=> navigate("/Check")} >{franchise.buy}</button>
     </div>
               </Col>
             )

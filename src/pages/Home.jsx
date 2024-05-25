@@ -5,10 +5,6 @@ import {listfranchise} from '../data/index';
 import {useNavigate} from "react-router-dom";
 
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
 
 const Home = () => {
 
@@ -76,7 +72,7 @@ const Home = () => {
 
 
     <div className='ket d-flex justify-content-between align-items-center px-3 pb-3 pt-2'>
-      <button className='btn btn-danger rounded-3 mb-2'>{franchise.buy}</button>
+      <button className='btn btn-danger rounded-3 mb-2' onClick={()=> navigate("/Check")}>{franchise.buy} </button>
     </div>
 
 

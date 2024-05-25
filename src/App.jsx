@@ -4,6 +4,8 @@ import Home from "./pages/Home"
 import Franchiseaja from "./pages/Franchise"
 import Testimoni from "./pages/Testimoni"
 
+import Check from "./pages/Check"
+
 import Homeadmin from "./pages/Home_admin"
 import Read from "./pages/Read_admin"
 
@@ -26,6 +28,8 @@ function App() {
      <Route path="/" Component={Home} />
      <Route path="/Franchise" Component={Franchiseaja} />
      <Route path="/Testimoni" Component={Testimoni} />
+
+     <Route path="/Check" Component={Check} />
 
      <Route path="/login" Component={Login} />
      <Route path="/daftar" Component={Daftar} />
